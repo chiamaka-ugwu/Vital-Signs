@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vital Health</title>
+
+    <script
+      src="https://kit.fontawesome.com/ba375fe002.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- nav bar starts -->
+    <nav id="nav">
+      <a href="./index.html">
+        <h1>
+          <i class="bx bx-pulse"></i>
+          <span>VITAL HEALTH</span>
+        </h1>
+      </a>
+      <!-- <i class="fa fa-bars menu-icon" id="menu-icon" style="color: red; cursor: pointer;"></i>
+        <a id="close" class="fa fa-close"></a> -->
+      <ul id="drop-down">
+        <li><a class="nav" href="">About</a></li>
+        <li><a class="nav" href="">How It Works</a></li>
+        <li><a class="resume" id="open-modal">Check Vital Signs</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- <i class="fa-solid fa-heart-pulse"></i>
+        <div class="profile">
+            <h1>Hello <span>John Doe</span></h1>
+
+
+
+        </div> -->
+      <a href="./dashboard.html">Dashboard</a>
+    </main>
+
+    <!-- SIGN UP MODAL -->
+    <div class="form-cont" id="signup-modal">
+      <form action="" class="form">
+        <div class="details">
+          <i class="fa-solid fa-xmark" id="close"></i>
+          <h1>Create Account</h1>
+          <div class="form-input">
+            <label for="fullname">Full Name</label>
+            <input type="text" name="fullname" id="fullname" />
+          </div>
+          <div class="form-input">
+            <label for="phone">Phone</label>
+            <input type="text" name="phone" id="phone" />
+          </div>
+          <div class="form-input">
+            <label for="email">Email Address</label>
+            <input type="text" name="email" id="email" />
+          </div>
+          <div class="form-input">
+            <label for="password">Create Password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="form-input">
+            <label for="create-password">Confirm Password</label>
+            <input
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+            />
+          </div>
+          <div class="form-input">
+            <input type="submit" value="Create Account" class="submit" />
+          </div>
+          <p class="acct">
+            Already have an account? <a class="log" id="open-login">Log in</a>
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <!-- LOGIN MODAL -->
+    <div class="form-cont" id="login-modal">
+      <form action="" class="form">
+        <div class="details">
+          <i class="fa-solid fa-xmark" id="close2"></i>
+          <h1>Login</h1>
+          <div class="form-input">
+            <label for="email">Email Address</label>
+            <input type="text" name="email" id="email" />
+          </div>
+          <div class="form-input">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="form-input">
+            <input type="submit" value="Login" class="submit" />
+          </div>
+          <!-- <p class="acct">
+            Don't have an account? <a class="log" onclick='openModal()'>Create Account</a>
+          </p> -->
+        </div>
+      </form>
+    </div>
+
+
+
+    <script>
+      const open = document.getElementById("open-modal");
+      const openLogin = document.getElementById("open-login");
+      const modal = document.getElementById("signup-modal");
+      const login = document.getElementById("login-modal");
+      const close = document.getElementById("close");
+      const close2 = document.getElementById("close2");
+
+      open.addEventListener("click", function () {
+        modal.style.display = "flex";
+      });
+      close.addEventListener("click", function () {
+        modal.style.display = "none";
+      });
+
+      openLogin.addEventListener("click", function () {
+        modal.style.display = "none";
+        login.style.display = "flex";
+      });
+      close2.addEventListener("click", function () {
+        login.style.display = "none";
+      });
+
+      const openModal = () => {
+        login.style.display = "none";
+        modal.style.display = "flex";
+
+      }
+    </script>
+  </body>
+</html>

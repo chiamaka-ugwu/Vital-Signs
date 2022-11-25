@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Syne', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: #6b6bfa;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f8f8f8;
+    border-radius: 0 10px 10px 0;
+}
+
+body{
+    background-color: aliceblue;
+}
+nav{
+    height: 5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px -1px rgba(0, 0, 0, 0.25);
+
+}
+nav h1{
+    margin-left: 5rem;
+    color: #6b6bfa;
+    display: flex;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+}
+.menu-icon{
+    display: none;
+}
+nav #close{
+    display: none;
+}
+nav ul{
+    margin-right: 2rem;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+    margin-right: 2.5rem;
+    color: #6b6bfa;
+    font-weight: 600;
+
+}
+nav .resume{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #6b6bfa;
+    cursor: pointer;
+}
+nav .resume:hover{
+    background-color: #6b6bfa;
+    border: 2px solid #6b6bfa;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover, .active{
+    text-decoration: underline;
+}
+
+
+
+/* DASHBOARD */
+main{
+    display: flex;
+}
+.left{
+    width: 15%;
+    height: 100vh;
+    border-right: 1px solid rgba(128, 128, 128, 0.526);
+    padding-top: 2.5rem;
+    margin-left: 2rem;
+    color: #6b6bfa;
+
+}
+.right{
+    width: 85%;
+    padding-top: 2rem;
+    margin-left: 2rem;
+
+}
+.right .span{
+    color: #6b6bfa;
+}
+.vital{
+    margin-top: 10rem;
+}
+.vital h1{
+    color: #6b6bfa;
+}
+.container{
+    width: 95%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.box{
+    width: 25%;
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0px 20px 0px 20px;
+    box-shadow: 0px 4px 10px -1px rgba(0, 0, 0, 0.25);
+}
+.box h4{
+    margin-top: 1rem;
+}
+.heart{
+    color: rgb(200, 92, 92);
+}
+.border{
+    border-top: 4px solid rgb(200, 92, 92);
+}
+.border1{
+    border-top: 4px solid #6b6bfa;
+}
+.border2{
+    border-top: 4px solid rgb(24, 74, 24);
+}
+.oxygen{
+    color: #6b6bfa;
+}
+.temp{
+    color: rgb(24, 74, 24);
+}
+i{
+    font-size: 50px;
+}
+
+
+/* SIGN UP */
+.form-cont{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.end{
+    position: absolute;
+    bottom: 2rem;
+}
+.form{
+    width: 40%;
+    height: 400px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px -1px rgba(0, 0, 0, 0.25);
+    padding: 1rem 0;
+    border-radius: 10px;
+    overflow-y: scroll;
+    position: relative; 
+}
+.form-input{
+    display: flex;
+    flex-direction: column;
+}
+.form-input label{
+    margin-bottom: 0.3rem;
+}
+.form-input input{
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #6b6bfa;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    outline: none;
+}
+.details{
+    width: 80%;
+    margin: auto;
+}
+.details h1{
+    color: #6b6bfa;
+    margin-bottom: 1rem;
+}
+.submit{
+    background-color: #6b6bfa;
+    color: #fff;
+    margin: 0.5rem 0 1rem 0;
+    font-size: 16px;
+}
+.submit:hover{
+    background-color: gray;
+    border: 1px solid gray;
+}
+.acct{
+    font-size: 15px;
+}
+.log{
+    color: #6b6bfa;
+    font-weight: 600;
+    cursor: pointer;
+}
+#close, #close2{
+    font-size: 25px;
+    position: absolute;
+    right: 2rem;
+    top: 1.4rem;
+    color: gray;
+    padding: 3px 6px;
+    border: 1px solid #6b6bfa;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.angle{
+    font-size: 14px;
+}
+.home{
+    color: #6b6bfa;
+    text-decoration: none;
+    font-weight: 600;
+}
+#login-modal{
+    display: none;
+}
+#login-modal h1{
+    margin-bottom: 3rem;
+}
+.profile h1, .profile h4{
+    margin-bottom: 1rem;
+}
