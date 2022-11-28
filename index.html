@@ -31,22 +31,108 @@
       <!-- <i class="fa fa-bars menu-icon" id="menu-icon" style="color: red; cursor: pointer;"></i>
         <a id="close" class="fa fa-close"></a> -->
       <ul id="drop-down">
-        <li><a class="nav" href="">About</a></li>
-        <li><a class="nav" href="">How It Works</a></li>
+        <!-- <li><a class="nav" href="">About</a></li> -->
+        <li><a class="nav" href="#def">Definition of Terms</a></li>
         <li><a class="resume" id="open-modal">Check Vital Signs</a></li>
       </ul>
     </nav>
 
-    <main>
-      <!-- <i class="fa-solid fa-heart-pulse"></i>
-        <div class="profile">
-            <h1>Hello <span>John Doe</span></h1>
-
-
-
-        </div> -->
-      <a href="./dashboard.html">Dashboard</a>
+    <main class="main">
+      <div class="one">
+        <h1 class="h1">What are vital signs?</h1>
+        <p class="p">
+          Vital signs are measurements of the body's most basic functions. The
+          four main vital signs routinely monitored by medical professionals and
+          health care providers include the following:
+        </p>
+        <ul class="ul1">
+          <li>Body temperature</li>
+          <li>Pulse rate</li>
+          <li>Respiration rate (rate of breathing)</li>
+          <li>
+            Blood pressure (Blood pressure is not considered a vital sign, but
+            is often measured along with the vital signs.)
+          </li>
+        </ul>
+        <h3 class="h3">Others may include:</h3>
+        <ul>
+          <li>Oxygen Concentration (SPO2)</li>
+          <li>Heart Rate</li>
+        </ul>
+      </div>
+      <div class="two">
+        <img src="./images/VitalSigns_share.jpg" alt="vital signs" />
+      </div>
     </main>
+    
+    <a href="./dashboard.html">Dashboard</a>
+
+
+    <div class="main main2" id="def">
+      <div class="group">
+        <h2 class="h2">What is body temperature?</h2>
+        <p class="p">
+          The normal body temperature of a person varies depending on gender,
+          recent activity, food and fluid consumption, time of day, and, in
+          women, the stage of the menstrual cycle. Normal body temperature can
+          range from 97.8 degrees F (or Fahrenheit, equivalent to 36.5 degrees
+          C, or Celsius) to 99 degrees F (37.2 degrees C) for a healthy adult.
+        </p>
+      </div>
+      <div class="group">
+        <h2 class="h2">What is the pulse rate?</h2>
+        <p class="p">
+          The pulse rate is a measurement of the heart rate, or the number of
+          times the heart beats per minute. As the heart pushes blood through
+          the arteries, the arteries expand and contract with the flow of the
+          blood. Taking a pulse not only measures the heart rate, but also can
+          indicate the following: Heart rhythm and Strength of the pulse. The
+          normal pulse for healthy adults ranges from 60 to 100 beats per
+          minute. The pulse rate may fluctuate and increase with exercise,
+          illness, injury, and emotions. Females ages 12 and older, in general,
+          tend to have faster heart rates than do males.
+        </p>
+      </div>
+    </div>
+
+    <div class="main main2 main3">
+      <div class="two table">
+        <img
+          src="./images/adult-normal-diagnosis-vitals-signs-original.jpeg"
+          alt="vital signs"
+        />
+      </div>
+      <div class="one">
+        <div class="group">
+          <h2 class="h2">What is the respiration rate?</h2>
+          <p class="p">
+            The respiration rate is the number of breaths a person takes per
+            minute. The rate is usually measured when a person is at rest and
+            simply involves counting the number of breaths for one minute by
+            counting how many times the chest rises. Respiration rates may
+            increase with fever, illness, and other medical conditions. When
+            checking respiration, it is important to also note whether a person
+            has any difficulty breathing. Normal respiration rates for an adult
+            person at rest range from 12 to 16 breaths per minute.
+          </p>
+        </div>
+        <div class="group">
+          <h2 class="h2">What is oxygen saturation?</h2>
+          <p class="p">
+            Oxygen saturation is the fraction of oxygen-saturated hemoglobin
+            relative to total hemoglobin (unsaturated + saturated) in the blood.
+            The human body requires and regulates a very precise and specific
+            balance of oxygen in the blood. Normal arterial blood oxygen
+            saturation levels in humans are 97 - 100 percent. If the level is
+            below 90 percent, it is considered low and called hypoxemia.
+            Arterial blood oxygen levels below 80 percent may compromise organ
+            function, such as the brain and heart, and should be promptly
+            addressed. Continued low oxygen levels may lead to respiratory or
+            cardiac arrest.
+          </p>
+        </div>
+      </div>
+    </div>
 
     <!-- SIGN UP MODAL -->
     <div class="form-cont" id="signup-modal">
@@ -112,8 +198,6 @@
       </form>
     </div>
 
-
-
     <script>
       const open = document.getElementById("open-modal");
       const openLogin = document.getElementById("open-login");
@@ -140,8 +224,7 @@
       const openModal = () => {
         login.style.display = "none";
         modal.style.display = "flex";
-
-      }
+      };
     </script>
   </body>
 </html>
